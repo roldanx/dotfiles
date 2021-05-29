@@ -1,3 +1,6 @@
 # dotfiles
 
-This repository is a personal backup for Linux OS files
+This repository is a personal backup for Linux OS files.
+
+[!WARN]
+ZSH theme setup requires installing **powerline** and cloning https://github.com/romkatv/powerlevel10k.
