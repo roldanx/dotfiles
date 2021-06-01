@@ -77,7 +77,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  history-substring-search 
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,10 +121,11 @@ alias rsynca='rsync -azvP'
 alias update='sudo snap refresh'
 
 # GIT
-alias gch='git checkout'
-alias gcm='git commit'
-alias glg='git log --graph --decorate --oneline'
-alias glga='git log --graph --decorate --oneline --all'
+# These aliases are already provided by OHMYZSH
+#alias gch='git checkout'
+#alias gcm='git commit'
+#alias glg='git log --graph --decorate --oneline'
+#alias glga='git log --graph --decorate --oneline --all'
 
 # PYTHON
 alias pip='pip3'
