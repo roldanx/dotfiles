@@ -115,41 +115,24 @@ source $ZSH/oh-my-zsh.sh
 alias ..='cd ..'
 alias svim='sudo vim'
 alias shtdwn='sudo shutdown -h +100'
+alias rsynca='rsync -azvP'
+
+# IP
 alias eip='curl portquiz.net'
 alias eport='ss -tu state listening'
-alias rsynca='rsync -azvP'
-alias update='sudo snap refresh'
 
 # GIT
-# These aliases are already provided by OHMYZSH
-#alias gch='git checkout'
-#alias gcm='git commit'
-#alias glg='git log --graph --decorate --oneline'
-#alias glga='git log --graph --decorate --oneline --all'
-
-# PYTHON
-alias pip='pip3'
-alias python='python3'
-
-# DOCKER
-alias pm='sudo podman'
-alias pmc='sudo podman-compose'
-alias prune='sudo podman system prune'
-alias prunev='sudo podman system prune && sudo podman volume prune'
+alias galias="alias | grep -v 'galias' | grep -P '^gaa=|^gba=|^gc=|^gcmsg=|^gcb=|^gcl=|^gst=|^gl=|^gp=|glgga='"
 
 # KUBERNETES
 alias kb='sudo /usr/local/bin/kubectl' # Configured to use kind
+alias ki='sudo /usr/local/bin/kind'
 alias kind='sudo /usr/local/bin/kind'
-alias mkb='minikube kubectl --'
-
-# IBM variables
-export PATH="$PATH:$HOME/.local/bin"
 
 # IBM alias
 alias dx='dx-cli'
-#source /usr/local/ibmcloud/autocomplete/bash_autocomplete
-alias ibm='ibmcloud'
-alias ibmk='ibmcloud ks'
+
+export PATH="$PATH:$HOME/.local/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
